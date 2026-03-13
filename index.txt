@@ -1,0 +1,69 @@
+1:"$Sreact.fragment"
+3:I[7558,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"ThemeProvider"]
+4:I[611,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"LocaleProvider"]
+5:I[552,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"default"]
+a:I[7150,[],""]
+:HL["/_next/static/css/78c4370b96c05382.css","style"]
+2:T590,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"aBv9GdV20VJSfXNNlCveu","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/78c4370b96c05382.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Resume","type":"page","target":"cv","href":"/cv"},{"title":"Teaching","type":"page","target":"teaching","href":"/teaching"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Yuetong Guo","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"奖项","type":"page","target":"awards","href":"/awards"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Resume","type":"page","target":"cv","href":"/cv"},{"title":"Teaching","type":"page","target":"teaching","href":"/teaching"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"郭玥彤","en":"Yuetong Guo"}}],"$L6","$L7"]}]}]}]]}]]}],{"children":["__PAGE__","$L8",{},null,false]},null,false],"$L9",false]],"m":"$undefined","G":["$a",[]],"s":false,"S":true}
+b:I[9766,[],""]
+c:I[8924,[],""]
+d:I[7923,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"default"]
+e:I[344,["615","static/chunks/615-4d3a2b0922041f0c.js","140","static/chunks/140-5a06db52c381e434.js","619","static/chunks/619-9168df9c2a29b74b.js","681","static/chunks/681-a45142bd808369d5.js","974","static/chunks/app/page-2de13bf2792909fe.js"],"default"]
+f:I[4431,[],"OutletBoundary"]
+11:I[5278,[],"AsyncMetadataOutlet"]
+13:I[4431,[],"ViewportBoundary"]
+15:I[4431,[],"MetadataBoundary"]
+16:"$Sreact.suspense"
+6:["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Lb",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lc",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+7:["$","$Ld",null,{"lastUpdated":"November 3, 2026","lastUpdatedByLocale":{"zh":"2026年3月12日","en":"November 3, 2026"},"defaultLocale":"en"}]
+8:["$","$1","c",{"children":[["$","$Le",null,{"dataByLocale":{"zh":{"author":{"name":"郭玥彤","title":"本科生","institution":"复旦大学","avatar":"/photo1.jpg"},"social":{"email":"3066869875@qq.com","location":"上海，中国","location_url":"https://maps.google.com","location_details":["Room 123, Science Building,","University Avenue, City, Country"],"google_scholar":"https://scholar.google.com","orcid":"https://orcid.org","github":"https://github.com","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["可视分析","智能决策","大语言模型应用","仿真系统开发"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"关于我","content":"我叫郭玥彤，现为复旦大学数据科学与大数据技术专业本科生，绩点 3.75/4，当前在复旦大学可视分析与智能决策实验室（FDUVis）参与科研工作。\n\n我的研究与实践主要围绕可视分析、智能决策、大语言模型应用以及仿真系统开发展开。目前持续参与仿真系统相关项目与图表理解方向研究。进行过的工作有仿真内核开发与调优、前后端开发，以及大模型训练等工作。\n"}]}]},"en":{"author":{"name":"郭玥彤","title":"本科","institution":"复旦大学","avatar":"/photo1.jpg"},"social":{"email":"3066869875@qq.com","location":"City, Country","location_url":"https://maps.google.com","location_details":["Room 123, Science Building,","University Avenue, City, Country"],"google_scholar":"https://scholar.google.com","orcid":"https://orcid.org","github":"https://github.com","linkedin":"https://linkedin.com"},"features":{"enable_likes":true,"enable_one_page_mode":false},"enableOnePageMode":false,"researchInterests":["Visual Analytics","Intelligent Decision-Making","Large Language Model Applications","Simulation System Development"],"pagesToShow":[{"type":"about","id":"about","sections":[{"id":"about","type":"markdown","source":"bio.md","title":"About","content":"My name is Yuetong Guo, currently an undergraduate student in Data Science and Big Data Technology at Fudan University, with a GPA of 3.75/4. I am currently participating in research work at Fudan University Visual Analytics and Intelligent Decision Lab (FDUVis).\r\n\r\nMy research and practice mainly revolve around visual analytics, intelligent decision-making, large language model applications, and simulation system development. I am currently continuously participating in simulation system-related projects and chart understanding research. The work I have done includes simulation kernel development and optimization, front-end and back-end development, and large model training."}]}]}},"defaultLocale":"en"}],null,["$","$Lf",null,{"children":["$L10",["$","$L11",null,{"promise":"$@12"}]]}]]}]
+9:["$","$1","h",{"children":[null,[["$","$L13",null,{"children":"$L14"}],null],["$","$L15",null,{"children":["$","div",null,{"hidden":true,"children":["$","$16",null,{"fallback":null,"children":"$L17"}]}]}]]}]
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+18:I[622,[],"IconMark"]
+12:{"metadata":[["$","title","0",{"children":"Yuetong Guo"}],["$","meta","1",{"name":"description","content":"undergraduate student at the University of Fudan."}],["$","meta","2",{"name":"author","content":"郭玥彤"}],["$","meta","3",{"name":"keywords","content":"郭玥彤,PhD,Research,复旦大学"}],["$","meta","4",{"name":"creator","content":"郭玥彤"}],["$","meta","5",{"name":"publisher","content":"郭玥彤"}],["$","meta","6",{"property":"og:title","content":"Yuetong Guo"}],["$","meta","7",{"property":"og:description","content":"undergraduate student at the University of Fudan."}],["$","meta","8",{"property":"og:site_name","content":"郭玥彤's Academic Website"}],["$","meta","9",{"property":"og:locale","content":"en_US"}],["$","meta","10",{"property":"og:type","content":"website"}],["$","meta","11",{"name":"twitter:card","content":"summary"}],["$","meta","12",{"name":"twitter:title","content":"Yuetong Guo"}],["$","meta","13",{"name":"twitter:description","content":"undergraduate student at the University of Fudan."}],["$","link","14",{"rel":"icon","href":"/favicon.svg"}],["$","$L18","15",{}]],"error":null,"digest":"$undefined"}
+17:"$12:metadata"

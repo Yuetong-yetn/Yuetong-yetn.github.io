@@ -1,0 +1,222 @@
+1:"$Sreact.fragment"
+3:I[7558,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"ThemeProvider"]
+4:I[611,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"LocaleProvider"]
+5:I[552,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"default"]
+b:I[7150,[],""]
+:HL["/_next/static/css/78c4370b96c05382.css","style"]
+2:T590,
+    try {
+      const cfg = {"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = 'en';
+      root.setAttribute('data-locale', 'en');
+    }
+  0:{"P":null,"b":"aBv9GdV20VJSfXNNlCveu","p":"","c":["","cv",""],"i":false,"f":[[["",{"children":[["slug","cv","d"],{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/78c4370b96c05382.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"scroll-smooth","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link",null,{"rel":"dns-prefetch","href":"https://jialeliu.com"}],["$","link",null,{"rel":"preconnect","href":"https://jialeliu.com","crossOrigin":""}],["$","link",null,{"rel":"preload","as":"font","type":"font/woff2","href":"https://jialeliu.com/fonts/georgiab.woff2","crossOrigin":""}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              try {\n                const theme = localStorage.getItem('theme-storage');\n                const parsed = theme ? JSON.parse(theme) : null;\n                const setting = parsed?.state?.theme || 'system';\n                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;\n                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));\n                var root = document.documentElement;\n                root.classList.add(effective);\n                root.setAttribute('data-theme', effective);\n              } catch (e) {\n                var root = document.documentElement;\n                root.classList.add('light');\n                root.setAttribute('data-theme', 'light');\n              }\n            "}}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],["$","body",null,{"className":"font-sans antialiased","children":["$","$L3",null,{"children":["$","$L4",null,{"config":{"enabled":true,"locales":["zh","en"],"defaultLocale":"en","mode":"auto","fixedLocale":"en","persist":true,"switcher":true,"labels":{"zh":"中文","en":"English"}},"children":[["$","$L5",null,{"items":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Resume","type":"page","target":"cv","href":"/cv"},{"title":"Teaching","type":"page","target":"teaching","href":"/teaching"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}],"siteTitle":"Yuetong Guo","enableOnePageMode":false,"i18n":"$0:f:0:1:1:props:children:1:props:children:1:props:children:props:children:props:config","itemsByLocale":{"zh":[{"title":"关于我","type":"page","target":"about","href":"/"},{"title":"奖项","type":"page","target":"awards","href":"/awards"},{"title":"简历","type":"page","target":"cv","href":"/cv"}],"en":[{"title":"About","type":"page","target":"about","href":"/"},{"title":"Publications","type":"page","target":"publications","href":"/publications"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Resume","type":"page","target":"cv","href":"/cv"},{"title":"Teaching","type":"page","target":"teaching","href":"/teaching"},{"title":"Awards","type":"page","target":"awards","href":"/awards"},{"title":"Services","type":"page","target":"services","href":"/services"},{"title":"CV","type":"page","target":"cv","href":"/cv"}]},"siteTitleByLocale":{"zh":"郭玥彤","en":"Yuetong Guo"}}],"$L6","$L7"]}]}]}]]}]]}],{"children":[["slug","cv","d"],"$L8",{"children":["__PAGE__","$L9",{},null,false]},null,false]},null,false],"$La",false]],"m":"$undefined","G":["$b",[]],"s":false,"S":true}
+c:I[9766,[],""]
+d:I[8924,[],""]
+e:I[7923,["615","static/chunks/615-4d3a2b0922041f0c.js","619","static/chunks/619-9168df9c2a29b74b.js","310","static/chunks/310-e331d309ebd695f5.js","177","static/chunks/app/layout-4368d5a663973d20.js"],"default"]
+10:I[4431,[],"OutletBoundary"]
+12:I[5278,[],"AsyncMetadataOutlet"]
+14:I[4431,[],"ViewportBoundary"]
+16:I[4431,[],"MetadataBoundary"]
+17:"$Sreact.suspense"
+6:["$","main",null,{"className":"min-h-screen pt-16 lg:pt-20","children":["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+7:["$","$Le",null,{"lastUpdated":"November 3, 2026","lastUpdatedByLocale":{"zh":"2026年3月12日","en":"November 3, 2026"},"defaultLocale":"en"}]
+8:["$","$1","c",{"children":[null,["$","$Lc",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Ld",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":["$Lf",null,["$","$L10",null,{"children":["$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}]
+a:["$","$1","h",{"children":[null,[["$","$L14",null,{"children":"$L15"}],null],["$","$L16",null,{"children":["$","div",null,{"hidden":true,"children":["$","$17",null,{"fallback":null,"children":"$L18"}]}]}]]}]
+19:I[5421,["615","static/chunks/615-4d3a2b0922041f0c.js","140","static/chunks/140-5a06db52c381e434.js","681","static/chunks/681-a45142bd808369d5.js","182","static/chunks/app/%5Bslug%5D/page-a69ce665fb698593.js"],"default"]
+1a:Taaf,## 教育背景
+
+**复旦大学**，数据科学与大数据技术专业，本科在读
+
+- 绩点：**3.75/4**
+
+## 科研经历
+
+**复旦大学可视分析与智能决策实验室（FDUVIS）**，科研成员
+
+- 参与可视分析、智能决策与大语言模型相关科研工作。
+- 结合项目需求开展系统实现、实验支撑与工程落地。
+
+## 项目经历
+
+**基于大模型多智能体的高考志愿竞争模拟可视分析**
+复旦大学可视分析与智能决策实验室（FDUVIS）
+*2025.10 - 至今*
+- 负责数据工程和智能体建模，基于300余份实证问卷和1800余条高考录取信息构建了多智能体仿真推演的环境，有力保障了项目的推进。
+- 相关系统研究作为第二作者，撰写为会议论文，投稿于IEEE VIS（CCF-A推荐会议）。
+- 相关实证研究作为第三作者，作为摘要，投稿于HERA 2026（教育经济学顶级会议）。
+
+**基于大语言模型的有标注图表基准测试及生成方法研究**
+复旦大学可视分析与智能决策实验室（FDUVIS）
+*2026.01 - 至今*
+- 负责大模型指令集生成相关工作。
+- 参与面向有标注图表场景的数据构建与研究支持。
+
+**社交媒体事件动态仿真可视分析方法研究**
+复旦大学可视分析与智能决策实验室（FDUVIS）
+*2025.07 - 2025.08*
+- 参与该系统交互式前端页面的开发，并通过验收。
+- 完成社交媒体事件动态仿真与可视分析系统前端页面的可视化展示、交互功能复现及前后端接口对接。
+
+## 获奖情况
+
+- **复旦大学 2024 年新生专业发展奖学金**
+- **2024-2025 学年复旦大学本科生优秀学生奖学金三等奖**
+
+## 志愿经历
+
+**复旦大学青苗社实践部干事**
+*2024 - 2025 学年*
+- 参与实践活动组织与志愿服务工作。
+
+**复旦大学远征社乡村小院项目组成员**
+*2024 - 2025 学年*
+- 参与“乡村小院”相关组织实践工作。
+- 2025 年 1 月参与的“直播助农-乡村小院电商直播项目”顺利结项。
+
+- 2024-2025 学年累计志愿时长 **44 小时**。
+
+## 英语能力
+
+雅思 7.5（阅读 9），大学英语六级 617 分（口语成绩优秀）
+
+## 专业课程
+- 高等线性代数
+- 数值算法与案例分析
+- 数据结构
+- 计算机原理
+- 概率论
+- 自然语言处理
+- 统计学基础
+- 数据库
+- 最优化方法
+- 金融工程
+
+## 技能
+
+- **编程语言：** Python、C、C++、JavaScript、HTML、CSS、SQL、MATLAB
+- **前端开发：** Vue、D3.js、NumPy、Pandas、Matplotlib、Seaborn、SciPy
+- **后端开发：** Ajax、Maven
+- **AI工具** 调用qwen、deepseek等大模型api进行开发，codex、cursor等进行vibe coding
+- **其他工具** LaTeX、Shell
+1b:Tcb6,## Education
+
+**Fudan University**, Data Science and Big Data Technology, Undergraduate Student
+
+- GPA: **3.75/4**
+
+## Research Experience
+
+**Fudan University Visual Analytics and Intelligent Decision Lab (FDUVis)**, Research Member
+
+- Participated in research on visual analytics, intelligent decision-making, and large language models.
+- Conducted system implementation, experimental support, and engineering deployment based on project needs.
+
+## Project Experience
+
+**ChoiceVerse: Visual Analytics of Competitive College Choice Behavior via Multi-Agent What-If Simulation**
+Fudan University Visual Analytics and Intelligent Decision Lab (FDUVis)
+*Oct 2025 - Present*
+- Responsible for simulation kernel development and optimization.
+- Responsible for related backend function development and system support.
+
+**Research on Benchmark Testing and Generation Methods for Annotated Charts Based on Large Language Models**
+Fudan University Visual Analytics and Intelligent Decision Lab (FDUVis)
+*Jan 2026 - Present*
+- Responsible for generating instruction sets for large models.
+- Participated in data construction and research support for annotated chart scenarios.
+
+**Frontend Reproduction of Social Media Event Dynamics Simulation and Visual Analysis Paper**
+Summer Research 2025
+*Jul 2025 - Aug 2025*
+- Participated in the reproduction of the frontend part of the paper "Interactive simulation and visual analysis of social media event dynamics with LLM-based multi-agent modeling".
+- Completed the visualization display, interaction function reproduction, and front-end and back-end interface integration of the social media event dynamics simulation and visual analysis system.
+
+## Awards & Honors
+
+- **Fudan University 2024 New Student Professional Development Scholarship**
+- **2024-2025 Academic Year Fudan University Undergraduate Excellent Student Scholarship Third Prize**
+
+## Volunteer Experience
+
+**Fudan University Qingmiao Society Practice Department Officer**
+*2024 - 2025 Academic Year*
+- Participated in the organization of practical activities and volunteer service work.
+
+**Fudan University Expedition Society Rural Courtyard Project Group Member**
+*2024 - 2025 Academic Year*
+- Participated in the organizational practice work of "Rural Courtyard".
+- The "Live Streaming to Help Farmers - Rural Courtyard E-commerce Live Streaming Project" participated in January 2025 was successfully concluded.
+- Total volunteer hours for 2024-2025 academic year: **44 hours**.
+
+## English Proficiency
+
+IELTS 7.5 (Reading 9), CET-6 617 (Excellent Oral Score)
+
+## Major Courses
+
+- Mathematical Analysis
+- Linear Algebra
+- Programming
+- Advanced Linear Algebra
+- Numerical Algorithms and Case Analysis
+- Data Structures
+- Computer Principles
+- Probability Theory
+- Natural Language Processing
+- Statistics Fundamentals
+- Database
+- Optimization Methods
+- Financial Engineering
+
+## Skills
+
+- **Programming Languages:** Python, C, C++, Java, JavaScript, HTML, CSS, SQL, MATLAB
+- **Frontend Development:** Vue, D3.js, NumPy, Pandas, Matplotlib, Seaborn, SciPy
+- **Backend Development:** Ajax, Maven
+- **Other Tools:** Markdown, Overleaf, Cursor, GitHub, WSL, UV, Bash, Shell
+f:["$","$L19",null,{"dataByLocale":{"zh":{"type":"text","config":{"type":"text","title":"简历","source":"cv.md"},"content":"$1a"},"en":{"type":"text","config":{"type":"text","title":"CV","source":"cv.md"},"content":"$1b"}},"defaultLocale":"en"}]
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+11:null
+1c:I[622,[],"IconMark"]
+13:{"metadata":[["$","title","0",{"children":"CV | Yuetong Guo"}],["$","meta","1",{"name":"author","content":"郭玥彤"}],["$","meta","2",{"name":"keywords","content":"郭玥彤,PhD,Research,复旦大学"}],["$","meta","3",{"name":"creator","content":"郭玥彤"}],["$","meta","4",{"name":"publisher","content":"郭玥彤"}],["$","meta","5",{"property":"og:title","content":"Yuetong Guo"}],["$","meta","6",{"property":"og:description","content":"undergraduate student at the University of Fudan."}],["$","meta","7",{"property":"og:site_name","content":"郭玥彤's Academic Website"}],["$","meta","8",{"property":"og:locale","content":"en_US"}],["$","meta","9",{"property":"og:type","content":"website"}],["$","meta","10",{"name":"twitter:card","content":"summary"}],["$","meta","11",{"name":"twitter:title","content":"Yuetong Guo"}],["$","meta","12",{"name":"twitter:description","content":"undergraduate student at the University of Fudan."}],["$","link","13",{"rel":"icon","href":"/favicon.svg"}],["$","$L1c","14",{}]],"error":null,"digest":"$undefined"}
+18:"$13:metadata"
